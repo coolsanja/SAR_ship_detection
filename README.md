@@ -31,16 +31,21 @@ sar_ship_detection/
 ```bash
 pip install -r requirements.txt
 ```
-### 2a. Download LS-SSDD dataset
+### 2. Download SAR Sentinel-1 Scene
+Download a scene from e.g. https://search.asf.alaska.edu/#/
+More specifically: https://search.asf.alaska.edu/#/?zoom=6.210&center=20.101,55.720&polygon=POLYGON((19.1461%2058.4746,21.4187%2058.4746,21.4187%2059.1215,19.1461%2059.1215,19.1461%2058.4746))&resultsLoaded=true&granule=S1A_IW_GRDH_1SDV_20260218T162104_20260218T162129_063276_07F201_4438-GRD_HD&productTypes=GRD_HD
+Place in 'data/sentinel1/Baltic/'
+
+### 3a. Download LS-SSDD dataset
 Download from: https://github.com/TianwenZhang0825/LS-SSDD-v1.0-OPEN
-Place in `data/ssdd/`
+Place in 'data/ssdd/'
 
-### 2b. Download SSDD dataset
+### 3b. Download SSDD dataset
 Download from: https://github.com/TianwenZhang0825/Official-SSDD
-Place in `data/ssdd/`
+Place in 'data/ssdd/'
 
 
-### 3. Run the pipeline
+### 4. Run the pipeline
 ```bash
 python preprocess_sar.py        # Preprocess SAR image
 python prepare_dataset.py       # Prepare SSDD for YOLO format
