@@ -1,0 +1,32 @@
+# SAR Ship Detection Pipeline - Dependencies
+# Install: pip install -r requirements.txt
+
+# Core ML
+ultralytics>=8.1.0       # YOLOv8
+torch>=2.0.0
+torchvision>=0.15.0
+
+# Geospatial
+rasterio>=1.3.0          # Read/write GeoTIFF
+geopandas>=0.14.0        # GeoJSON/GeoDataFrame handling
+shapely>=2.0.0           # Geometry operations
+pyproj>=3.6.0            # Coordinate transformations
+
+# SAR data access
+asf_search>=7.0.0        # Search & download Sentinel-1 from ASF
+
+# Image processing
+numpy>=1.24.0
+scipy>=1.11.0            # Speckle filtering
+opencv-python>=4.8.0     # Image manipulation
+Pillow>=10.0.0
+
+# Data & visualization
+matplotlib>=3.7.0
+seaborn>=0.12.0
+pandas>=2.0.0
+
+# Utilities
+tqdm>=4.65.0             # Progress bars
+pyyaml>=6.0              # YAML config for YOLO
+lxml>=4.9.0              # XML parsing (SSDD annotations)
