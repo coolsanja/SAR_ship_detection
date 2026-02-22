@@ -6,7 +6,8 @@ End-to-end pipeline for ship detection on Sentinel-1 SAR imagery using YOLOv8, d
 ```
 sar_ship_detection/
 ├── preprocess_sar.py        # Calibrate, speckle filter, normalize, tile SAR images
-├── prepare_dataset.py       # Convert SSDD dataset to YOLO format
+├── prepare_dataset_ssdd.py  # Convert SSDD dataset to YOLO format
+├── prepare_dataset_ls_ssdd.py  # Convert LS-SSDD dataset to YOLO format
 ├── train_model.py           # Fine-tune YOLOv8 on SSDD 
 ├── detect_ships.py          # Run inference on Sentinel-1 tiles
 ├── postprocess_results.py   # NMS, georeferencing, GeoJSON export
