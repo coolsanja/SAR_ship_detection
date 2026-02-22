@@ -18,8 +18,8 @@ sar_ship_detection/
 │   ├── geo_utils.py            # Geospatial utils (coords, projections)
 │   └── viz_utils.py            # Visualization utils
 ├── data/
-│   ├── sentinel1/Baltic        # Pre-downloaded Sentinel-1 data 
-│   └── ssdd/                   # Path for the training data - needs to be downloaded - step 2.
+│   ├── sentinel1/Baltic        # Pre-downloaded Sentinel-1 data - needs to be downloaded - step 2.
+│   └── ssdd/                   # Path for the training data - needs to be downloaded - step 3.
 │  
 ├── models/                     # Model weights
 └── outputs/                    # Detection results, GeoJSON, plots
